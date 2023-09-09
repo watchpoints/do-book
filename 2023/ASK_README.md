@@ -63,8 +63,6 @@ https://wnso49yyot.feishu.cn/docx/S0LFdEnXeo8JS6x6H45cQhRpnfU?from=from_copylink
 
 
 
-
-
 https://github.com/hellojammy/media
 
 
@@ -198,5 +196,9 @@ https://jinshuju.net/f/we1MyW
 
 
 
+### 25 .NO.25
 
+提问的同学快来接龙提问啦，重启可以从提出一个问题开始~
+
+https://shimo.im/docs/wPAti0OJpAI0Solj/ 《【提问】强哥答疑NO.25-9.9-2023只管去做成长会》
 
