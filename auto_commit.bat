@@ -5,4 +5,4 @@ cd /d %~dp0
 git pull
 git add -A .
 git commit -m "update"
-git push origin master
+git push
