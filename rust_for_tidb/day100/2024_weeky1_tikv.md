@@ -1,0 +1,149 @@
+---
+title: "跟着tikv源码学rust P01"
+date: 2023-05-05
+description: "Tidb"
+draft: false
+tags: ["Tidb"]
+---
+
+
+
+
+
+## # day1:5分钟系列--安装单节点tidb
+
+
+
+今天是tidb100天探索之游学习第一天
+
+## centos ：
+
+~~~
+
+资料：
+ https://asktug.com/t/topic/1007869
+ https://download.pingcap.com/docs-cn%2FLesson07_quick_start.mp4
+
+必须centos 
+centos  root用户登录 ，ubuntu遇到其他问题
+
+免密设置：
+ssh-keygen
+ssh-copy-id root@127.0.0.1 
+
+磁盘
+mkfs.ext4 /dev/nvme0n2
+mount /dev/nvme0n2  /mnt/tidb
+
+
+## 安装tiup
+curl --proto '=https' --tlsv1.2 -sSf https://tiup-mirrors.pingcap.com/install.sh | sh
+source /root/.bash_profile
+tiup install cluster
+
+配置模板：
+https://github.com/pingcap/tiup/blob/master/embed/examples/cluster/minimal.yaml 模板
+lscpu 默认
+
+// tiup cluster deploy <cluster-name> <version> <topology.yaml> [flags]
+tiup cluster deploy tidb7.5 7.5.0 ./minimal_centos.yaml
+
+查看集群列表
+tiup cluster list
+
+启动集群
+tiup cluster start tidb7.5
+
+检查集群状态
+tiup cluster display tidb7.5
+
+禁用开启启动
+tiup cluster disable tidb7.5
+
+删除集群
+tiup cluster destroy watchpoints
+yum -y install mysql
+# help
+- https://docs.pingcap.com/zh/tidb/dev/quick-start-with-tidb
+- https://asktug.com/t/topic/1019413
+- https://asktug.com/t/topic/1018622
+- ttps://docs.pingcap.com/zh/tidb/stable/tiup-cluster [反复看]
+- https://docs.pingcap.com/zh/tidb/stable/check-before-deployment
+
+~~~
+
+
+
+## #day2  分钟系列--编译tikv 并替换
+
+
+
+
+
+
+
+
+
+## build
+
+
+
+~~~
+
+
+~~~
+
+
+
+# 一、问题是什么
+
+
+
+- 阅读文章：https://asktug.com/t/topic/693645
+
+- 【源码合集】TiKV 源码阅读三部曲
+
+  https://mp.weixin.qq.com/s/HgflwnZZMHXaIsFV3PdGAg
+
+- 阅读  Rust 参考手册 中文版
+  https://rustwiki.org/zh-CN/reference/expressions/if-expr.html
+
+开始时间：2023-05-05
+
+结束时间：2023-06-05 
+
+期望一个月内
+
+# 二、如何分析的
+
+
+### TiKV 源码阅读三部曲（一）重要模块
+
+本小节将简单介绍 KVService 及其启动流程，并顺带介绍 TiKV 若干重要结构的初始化流程
+
+
+### TiKV 源码阅读三部曲（二）读流程
+
+本小节将在 TiKV 6.1 版本的源码基础上，以一条读请求为例，介绍当前版本读请求的全链路执行流程。
+
+- https://github.com/pingcap/kvproto/blob/master/proto/tikvpb.proto#L20
+  rpc KvGet(kvrpcpb.GetRequest) returns (kvrpcpb.GetResponse) {}
+
+- KVService
+
+
+
+# 三、如何解决的
+
+
+
+文章地址
+
+- http://localhost:1313/post/tidb/20230_05_05_tikv/
+
+- https://wangcy6.github.io/post/tidb/2022/tidb_01/
+
+
+
+
+
