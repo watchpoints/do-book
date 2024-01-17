@@ -78,22 +78,40 @@ yum -y install mysql
 
 
 
+###  1. what:
 
 
 
+### 2. why: 
 
 
 
-## build
+### 3. how：
+
+
+
+- rust 搭建
+
+~~~
+rsproxy.cn - 字节跳动新的 crates.io 和 rustup 的国内镜像源
+
+export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+
+curl --proto '=https' --tlsv1.2 -sSf https://rsproxy.cn/rustup-init.sh | sh
+
 
 
 
 ~~~
 
 
-~~~
 
+4. 相关资料
 
+- https://asktug.com/t/topic/996395
+
+  
 
 # 一、问题是什么
 
