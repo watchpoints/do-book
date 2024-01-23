@@ -138,6 +138,7 @@ dnf --enablerepo=powertools install protobuf-devel
 
 
 Centos安装Protobuf：
+ yum install git
 cargo install protobuf-codegen
 cargo install grpcio-compiler
 
@@ -155,33 +156,46 @@ git clone https://github.com/watchpoints/tikv.git
 git submodule update --init --recursive
 
 
-
+rm -rf ~/.cargo/.package-cache
 cargo build
 
-直接把我虚机编译无法登录了，改为2g云服务器。慢
+直接把我虚机编译无法登录了崩溃了
+改为2g云服务器。 根本编译不动。
 
 
-~~~
-
-- 解决GitHub网络波动严重
 
 ~~~
-遇到问题：
-Failed to connect to github.com port 443: 拒绝连接
-需要魔法棒
 
+- Failed to connect to github.com port 443: 拒绝连接
+
+~~~
+一、问题描述：Failed to connect to http://github.com port 443: Connection refused问题解决
+
+
+https://zhuanlan.zhihu.com/p/642910282
+
+
+二、解决方法：排查DNS解析问题
+
+https://www.ipaddress.com/ip-lookup
+修改hosts文件
+140.82.114.4 github.com
+199.232.69.194 github.global.ssl.fastly.net
+140.82.113.9 codeload.github.com
 nslookup命令用于查询DNS的记录，查看域名解析是否正常
-nslookup github.com
-非权威应答:
-名称:    github.com
-Address:  20.205.243.166
-
-20.205.243.166 github.com
-104.244.46.246 github.global.ssl.fastly.net
-20.205.243.165 codeload.github.com
 
 
+三、uage
+一次完整的HTTP请求过程是怎么样的呢？
 
+浏览器进行DNS域名解析，得到对应的IP地址
+根据这个IP，找到对应的服务器建立连接（三次握手）
+建立TCP连接后发起HTTP请求（一个完整的http请求报文）
+服务器响应HTTP请求，浏览器得到html代码（服务器如何响应）
+浏览器解析html代码，并请求html代码中的资源（如js、css、图片等）
+浏览器对页面进行渲染呈现给用户
+服务器关闭TCP连接（四次挥手
+https://zhuanlan.zhihu.com/p/161560683
 ~~~
 
 
@@ -196,6 +210,8 @@ CMake Error at CMakeLists.txt:38
 c++ is not a full path and was not found in the PATH.
 Tell CMake where to find the compiler by setting either the environment
 
+
+ Blocking waiting for file lock on package cache
 
 ~~~
 
