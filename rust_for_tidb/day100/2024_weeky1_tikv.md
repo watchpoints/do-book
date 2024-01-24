@@ -150,7 +150,10 @@ cp -rf include/ /usr/local/
 dnf install cmake
 
 git 免密设置
+ssh-keygen
+ssh-copy-id root@127.0.0.1 
 cat ~/.ssh/id_rsa.pub
+
 
 git clone https://github.com/watchpoints/tikv.git
 git submodule update --init --recursive
