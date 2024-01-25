@@ -128,7 +128,7 @@ git-fetch-with-cli = true
 ~~~、
 依赖： build-essential
 
-yum update # 这个和很慢
+yum update # 这个和很慢,必须执行
 yum groupinstall "Development Tools"
 
 依赖： openssl
@@ -160,7 +160,9 @@ git submodule update --init --recursive
 
 
 rm -rf ~/.cargo/.package-cache
-cargo build
+
+make build
+或者cargo build
 
 直接把我虚机编译无法登录了崩溃了
 改为2g云服务器。 根本编译不动。
@@ -216,9 +218,19 @@ Tell CMake where to find the compiler by setting either the environment
 
  Blocking waiting for file lock on package cache
 
+https://maiyang.me/post/2018-08-02-rust-guide-by-tikv/
 ~~~
 
 
+
+编译错误：
+
+~~~
+https://maiyang.me/post/2018-08-02-rust-guide-by-tikv/
+
+error: failed to run custom build command for `snappy-sys v0.1.0 (https://github.com/tikv/rust-snappy.git?branch=static-link#8c12738b)`
+
+~~~
 
 
 
