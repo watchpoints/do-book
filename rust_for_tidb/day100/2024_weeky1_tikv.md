@@ -126,9 +126,24 @@ git-fetch-with-cli = true
 - centos8 源码编译
 
 ~~~、
+依赖：How To Install snappy-devel on CentOS 8
+snappy可以用yum装，有的CentOS版本，没有直接装snappy-dev的包
+sudo dnf makecache --refresh
+dnf search snappy
+sudo dnf install snappy.x86_64
+
+sudo dnf install csnappy.x86_64
+sudo dnf install csnappy-devel.x86_64
+ 
+ sudo dnf install cmake
+
+
+
+、
+
 依赖： build-essential
 
-yum update # 这个和很慢,必须执行
+yum update # 可以不执行
 yum groupinstall "Development Tools"
 
 依赖： openssl
@@ -229,6 +244,13 @@ https://maiyang.me/post/2018-08-02-rust-guide-by-tikv/
 https://maiyang.me/post/2018-08-02-rust-guide-by-tikv/
 
 error: failed to run custom build command for `snappy-sys v0.1.0 (https://github.com/tikv/rust-snappy.git?branch=static-link#8c12738b)`
+
+is `cmake` not installed?
+
+4. 卡半天
+--out-dir "/root/tikv/target/debug"
+   Compiling server v0.0.1 (/root/tikv/components/server)
+    Building [=======================> ] 739/742: server
 
 ~~~
 
