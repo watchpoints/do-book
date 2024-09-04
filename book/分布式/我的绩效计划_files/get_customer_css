@@ -1,0 +1,366 @@
+
+        .cc-highlight {
+            color:#0066f4!important;
+        }
+        .cc-highlight-bk {
+            background-color:#0066f4!important;
+        }
+        .cc-highlight-fill {
+            fill:#0066f4!important;
+        }
+
+
+        hc-stage-card .hc-stage-card .stage-name {
+    min-width:0px;
+}
+
+/*首页二级字号调整大小*/
+pc-main-side-nav .pc-main-nav .nav-body .category-content .menu-classify-item .classify-header{
+    font-size:16px;
+    font-weight:600;
+    color:#000;
+}
+
+/*首页应用字号调整大小*/
+pc-main-side-nav .pc-main-nav .nav-body .category-content .menu-classify-item .classify-body .classify-body-item a.label, pc-main-side-nav .pc-main-nav .nav-body .category-content .menu-classify-item .classify-body .classify-body-item span.label{
+	    font-size:16px;
+}
+
+/*在线反馈显示服务通道*/
+.pc-main-frame .header-banner .operate-add-popup .contact {
+    display: block;
+}
+/*登录首页显示服务通道*/
+.customer-service {
+     display: flex;
+}
+
+
+/*banner显示当前用户名*/
+.pc-main-frame .header-banner > nav .user_box.user-name {
+	display: flex;
+}
+
+/*小箭头设为主题色*/
+.view-info-dialog .card-left .card-left-bottom hc-form-component hc-field-list .hcm-field-list-body .list-operate .show-list{
+    border-top: 8px solid #0066FF;
+}
+
+
+/*diolog个性化样式*/
+hc-dialog .hc-dialog-window{
+    background:#fff;
+}
+
+hc-dialog .hc-dialog-window header {
+    font-size:16px;
+    padding:0 32px;
+    height:64px;
+    line-height:64px;
+    font-weight:600;
+}
+
+hc-dialog .hc-dialog-window header .icon {
+    font-size:20px;
+}
+
+
+.next-user-container .user-search input, hc-category-list-selector, hc-common-select, hc-compose-selector, hc-dataset-list-selector, hc-datetime-picker, hc-datetime-picker-range, hc-icon-selector, hc-input, hc-input-auto-complete, hc-input-data-block, hc-input-date, hc-input-date-picker, hc-input-datetime, hc-input-fields-selector, hc-input-formula, hc-input-hour-minute, hc-input-item, hc-input-json, hc-input-linkage-selector, hc-input-location, hc-input-mask, hc-input-number, hc-input-number-super, hc-input-query, hc-input-query-string, hc-input-radio, hc-input-script, hc-input-search, hc-input-select-multi, hc-input-selector, hc-input-upload, hc-ocuppy, hc-report-check, hc-select, hc-select-basic-item, hc-select-dialog, hc-selector, hc-selector-depart, hc-selector-employee, hc-standard-tree-selector, hc-super-selector, hc-sys-link, hc-tag-list-selector, hc-text-area, hc-tree-list-selector, hc-tree-selector, input{
+    padding:6px 8px;
+}
+
+.hc-form .hc-form-group .title .label{
+    font-weight:600;
+}
+
+
+.btn-pc{
+    font-size: 15px;
+}
+/* 校园招聘招聘活动二维码职位列表隐藏漏斗过滤器*/
+.model-list-style[name="RecruitActivityJobs-portal_activity_job"] .model-mobile-page .model-mobile-body .operates .operates-line .operates-icon>div{
+display: none;
+}
+
+/* 校园招聘移动端展示banner
+.zsb-campus-index-category .recruit-campus-header{
+  background-image: url(https://cdn.hcmcloud.cn/img?type=image&index=1ff6be59c68b442cba62aed0007d9dcd8dnrkxfz);
+  background-size: cover;
+}*/
+
+.zsb-campus-index-category .recruit-campus-header svg{
+  display: none;
+}
+.zsb-campus-index-category .recruit-campus-header .logo{
+  display: none;
+}
+.zsb-campus-index-category .recruit-campus-header .header-bg{
+  display: none;
+}
+.zsb-campus-index-category .recruit-campus-header .title{
+  display: none;
+}
+/*实习生招聘移动端展示banner--目前已改成社聘通用banner,之后如需更改把注释去掉更换图片index即可 */
+/*.zsb-campus-index-category .recruit-intern-header{*/
+ /*background-image: url(https://cdn.hcmcloud.cn/img?type=image&index=79b6c9d6-b256-11ed-af5a-5e86f5d961af);*/
+/* background-size: cover;*/
+/*}*/
+
+/*.zsb-campus-index-category .recruit-intern-header svg{*/
+/*  display: none;*/
+/*}*/
+
+/*.zsb-campus-index-category .recruit-intern-header .logo{*/
+ /* display: none;*/
+/*}
+/*.zsb-campus-index-category .recruit-intern-header .header-bg{*/
+/*  display: none;
+/*}
+/*.zsb-campus-index-category .recruit-intern-header .title{
+/*  display: none;*/
+/*}*/
+
+
+/* 应聘进程简历详细页隐藏阶段*/
+.progress-detail .position .progress-title .name-inner-pc .state-name{
+    display: none;
+} 
+.progress_detail .position .progress-title .name-inner-mobile .state-name{
+    display: none;
+}
+/* 员工内推社聘筛选器大小调整*/
+.model-view-multi-style[name="ReleaseJobMgr-internal_social"] .simple-form hc-form .hc-form-group .content .hc-form-field{
+        max-width: 110px;
+            width: 110px;
+}
+/* 员工内推校聘需求单位筛选器移动端不显示lable*/
+.model-list-style[name="ReleaseJobMgr-internal_social"] .hc-form-field.hc-form-field.single-line .hc-form-label {
+    display: none;}
+/* 调整面试中心手机端按钮样式*/
+.hc-list-rec-interview-card .mobile-list-content .mobile-interview-card .card-content .card-top-content .resume-base-info {
+    width: calc(100% - 180px);
+}
+.hc-list-rec-interview-card .mobile-list-content .mobile-interview-card .card-content .card-top-content .operate-btn-list .operate-btn {
+    margin: 11px 4px;
+}
+.hc-list-rec-interview-card .mobile-list-content .mobile-interview-card .card-content .card-top-content .resume-base-info .candidate-info .first-line-info {
+flex-direction: column;
+}
+.hc-list-rec-interview-card .mobile-list-content .mobile-interview-card .card-content .card-top-content .resume-base-info .candidate-info .first-line-info .name {
+    max-width: unset;
+}
+
+/* 调整内推海报样式*/
+.internal-code-component-temp .recommend-code-content {
+   background-size: 100% 100% !important;
+}
+.internal-code-component-temp .recommend-code-content .recommend-code-img .recommend-code-word .recommend-address-code div {
+    color: #fff;
+}
+.internal-code-component-temp .recommend-code-content .recommend-code-img .internal-code {
+    color: #fff;
+}
+.internal-code-component-temp .recommend-code-content .recommend-code-img .recommend-code-word .recommend-desc .internal-title {
+    color: #fff;
+}
+.internal-code-component-temp .recommend-code-content .recommend-code-img .recommend-code-word .recommend-desc .internal-title .job-number {
+    color: #fff;
+}
+.internal-code-component-temp .recommend-code-content .recommend-code-img-tip>div {
+    color: #fff;
+}
+
+/*绩效活动/改进考核表样式*/
+.view-info-dialog .card-left .card-left-bottom .hc-form .hc-form-group .hc-form-field .hc-list-card .card-container .card-item {
+    padding: 8px 0!important;
+}
+
+/*绩效改进审批表单右侧审批环节区域/调节大小*/
+.workflow-detail-info-page-v3 .v3-wf-info-pc-new .around-content .process-info-pc-new {
+    display: block;
+    flex: 0 0 300px;
+    overflow: hidden;
+}
+
+hc-form-component hc-field-list .hcm-field-list-body .list-operate {
+    height: auto;
+    margin: 8px 0 8px;
+}
+/*招聘门户 移动端外部filter*/
+.portal-job-list-mobile .mobile-outside-mode-query .hc-form {
+    padding: 0 0 0 12px;
+
+}
+
+.portal-job-detail-pc .detail-left .job-top-operate .back-to-job-list {
+    display: none;
+}
+/*职位投递界面返回按钮隐藏*/
+.portal-job-detail-pc .detail-left .job-top-operate{
+justify-content: flex-end;}
+.portal-job-list-mobile .mobile-outside-mode-query hc-query .advance-query .hc-form .hc-form-group .content .hc-form-field.hc-form-field {
+    padding: 6px 12px 12px 0;
+}/*招聘门户校招版块加黑*/
+.recruit-depart-tree-node .not-leaf {
+    font-weight: 600;
+}
+/*移动端职位详情隐藏*/
+.company-recruit .company-recruit-block .address {
+    display: none;
+}
+/*招聘门户隐藏二维码*/
+.pc-main-frame .wx_address {
+    display: none;
+}
+/*招聘门户校招移动端请选择需求单位*/
+.portal-job-list-mobile .rec-top-filter .rec-no-tree {display: none;}
+
+/*隐藏职位详情页移动端的站点*/
+.company-recruit .recruit-portal-school-activity-block{
+    display:none;
+}
+
+/*隐藏移动端我要推荐按钮*/
+.company-recruit .company-recruit-bottom .recommend{
+        display: none;
+}
+
+
+/*隐藏移动端中建文化广场（暂时）*/
+.company-recruit-main .base .detail .item .content:nth-child(3){display:none}
+
+/*淘汰人员明细隐藏全部分类后面的状态*/
+.model-list-style[name='U_EliminatedPersonnelDetails-common_all'] .hcm-nav-fixed .hcm-nav-item:first-child .count {
+    display: none;
+}
+/*内推二维码调整*/
+.internal-code-component-temp .recommend-code-content .recommend-code-img .recommend-code-word .recommend-address-code img {
+    height: 120px;
+    margin: 30px auto;
+    width: 120px;
+}
+.internal-code-component-temp .recommend-code-content .recommend-code-img .recommend-code-word .recommend-address-code div {
+    font-size: 16px;
+}
+.internal-code-component-temp .recommend-code-content .recommend-code-img .internal-code {
+    font-size: 18px;
+}
+
+hc-dialog .model-mobile-page .model-mobile-body .operates-box.topFilter .operates {
+    padding: 12px 0;
+}
+
+.model-mobile-page .model-mobile-body .operates-box .mobile-outside-mode-query hc-query .advance-query .hc-form .hc-form-group .content .hc-form-field.hc-form-field {
+    padding-right: 8px;
+}
+
+/*招聘门户移动端隐藏筛选器*/
+/*校招移动端筛选器隐藏配置*/
+.portal-job-list-mobile .job-search-bar .operate-area {
+    display: none;
+}
+/*内推移动端兼容处理*/
+.recruit-job-detail-view .top-banner {
+	min-height: 100px;
+}
+/*应聘进程中移动端显示右边样式*/
+.model-list-style[name="ApplyJobRecords-portalProgress"] hc-tabs .show-all-tab{
+    display: none;
+}
+.recruit-job-detail-view .top-banner .top-banner-second-line div {
+    line-height:32px;
+}/*移动端接受offer按钮大小调整*/
+.mobile hc-dialog[name='offer_print'] hc-mobile-bottom-btn .mobile-btn-list .outer-list .hc-dialog-button>div {
+        font-size: 13px;
+}
+/*offer界面失效日期提醒内容颜色配置*/
+.attachResumeBtnGroupMobile .recOfferTip .tipTime {
+    color: #e1f403;
+}
+
+
+.rec-top-filter .hc-form-field.hc-form-field.single-line .component-input-inner {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/*招聘活动应聘者界面移动端需求单位label隐藏*/
+.model-list-style[name="RecruitActivityJobs-portal_activity_job"] .hc-form-field.hc-form-field.single-line .hc-form-label {
+    display: none;}
+    
+/*招聘活动应聘者界面移动端4个操作按钮及模糊搜索框隐藏*/
+.model-list-style[name='RecruitActivityJobs-portal_activity_job'] .hcm-nav-content .hcm-content .hcm-content-top .hcm-content-indicator .advance-query .simple .right-content .operates{
+    display: none;
+}
+
+.model-list-style[name='RecruitActivityJobs-portal_activity_job'] .hcm-nav-content .hcm-content .hcm-content-top .hcm-content-indicator .advance-query .simple .right-content .blur {
+    display: none;
+}
+
+/*360考核打开说明的关闭功能隐藏*/
+.hc-content-tip .tip-content .operate .close-btn{
+    display:none;
+}
+
+/*华胜隐藏测评对象数量
+.one-person-header-pc .header .left-info .naire-center .label1{
+    display:none;
+}
+.one-person-header-pc .header .left-info .naire-center .sum{
+    display:none;
+}
+.one-person-header .header .naire-center .answered-obj .obj-sum{
+    display:none;
+}
+.one-person-header .header .naire-center .answered-obj .sum{
+    display:none;
+}
+*/
+/*招聘门户左侧版块下单位左右缩进*/
+.portal-job-list-pc .portal-job-content .job-depart-tree .portal-depart-tree-up .tree-node-child{
+    margin-left: 18px;}
+.hc-editable-table .resizable-table .fix-content .row-cell .hc-form-field.read-only hc-text-area.hc-form-control, .hc-editable-table .resizable-table .flex-content .row-cell .hc-form-field.read-only hc-text-area.hc-form-control {
+    pointer-events: initial !important;
+}
+/*面试满意度问卷移动端题目行间距设置*/
+.eval-form-new .hc-form-group .fields hc-form-component .hc-form-label .label
+{     line-height: 1.5; }
+
+/*打分界面分组字数过多未全部展示出来*/
+.model-list-style:not([name='WorkFlowInstanceAssignment-approved']) or .model-list-style:not([name='WorkFlowInstance-mobileCard_myCreate']) .hc-tab-pane{ white-space: normal; word-break: break-word;}
+
+/*调整打分界面分组字数过多导致自动换行，展示为一行*/
+hc-tab-pane>div#hc-tab-pane label { max-width: max-content;}
+
+/*调整招聘门户-按单位查看页面 图标太小手机端容易误操作的问题*/
+.portal-depart-tree-up-mobile .recruit-depart-tree-node-mobile .icon-part .department-expand-icon-right {
+    width: 80px;
+    text-align: center;
+}
+
+.portal-depart-tree-up-mobile .recruit-depart-tree-node-mobile .icon-part .leaf-node{
+    width:auto !important;
+}
+
+/*集团调查问卷隐藏分数 
+.eval-obj-info .obj-info-fold .obj-info .obj-main .obj-name-score .obj-score .score {
+    display:none;
+}
+*/
+.eval-obj-tab .tabs {
+    display: none;
+}
+.eval-obj-info {
+    display: none;
+}
+.obj-card-pc {
+    display: none;
+}
+.one-person-header-pc .header .left-info .naire-center {
+    display: none;
+}
+.one-person-header .header .naire-center {
+    display: none;
+}
