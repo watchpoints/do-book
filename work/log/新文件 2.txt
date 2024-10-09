@@ -1,0 +1,49 @@
+
+icfs-client-debug --inodes的耗时，上午把数据给我 @王传义
+
+
+1.多节点并发迁移和方案评审完成
+
+1. 多节点并发迁移和HA方案评审完成
+2. 多节点并发迁移代码开发完成，提供功能自测和性能报告
+3. HA 重启过程 存在2个问题 core或者部分回滚情况待解决。
+
+
+1. Rock多通道适配:等待测试环节搭建完成验证后在评估。
+
+Rock多通道适配工作量评估60%，剩余快切部分依赖测试环节验证后在评估
+
+Why does the COMMIT_EDITMSG open when I try to commit in vscode?
+
+如果只有2个哨兵，投票1个,导致脑裂
+果它无法向至少1个副本写入，它将停止接受写入。
+由于复制是异步的，实际上无法写入意味着副本要么已断开连接，
+要么超过指定的最大延迟秒数没有向我们发送异步确认
+
+
+数据复制和同步的延迟不能超过10秒
+在网络分区
+old master超过10秒认为异步复制失败,
+拒绝接受客户端写入
+客户端换其他新master节点。
+
+1. 客户端与集群网络正常
+2. 集群中一个节点
+  与其他2个节点断网
+
+
+10秒内
+1. 如果只有2个哨兵，quorum = 1,
+   导致出现2个leader
+   (Example 1: just two Sentinels, DON'T DO THIS)
+2. 3个哨兵,quorum=2,
+   因为异步复制 同时出现2个leader
+   old leader继续处理客户端请求
+   (Example 2: basic setup with three boxes)
+#健康的slave的个数小于N，mater就禁止写入
+min-slaves-to-write 1
+#延迟小于min-slaves-max-lag秒的slave才认为是健康的slave。
+#数据复制和同步的延迟不能超过10秒
+min-slaves-max-lag 10
+#哨兵完成选举切换通知client 在60秒内
+sentinel failover-timeout mymaster 600

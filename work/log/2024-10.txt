@@ -1,0 +1,7 @@
+
+跟踪性能慢的原因 初步分析在s3返回接口上。
+PALF: Replicated Write-Ahead Logging for Distributed Databases
+
+提到：重点介绍复制日志系统的设计，
+因此，我们将选举算法的实现细节留给另一篇论文
+

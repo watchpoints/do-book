@@ -1,0 +1,4 @@
+paxos + rocksdb
+1. PaxosService 负责保证每次都只会有一个提案进入paxos流程。
+2. Paxos 模块具体实现了multi-Paxos算法。
+3. MonitorDBStore对kv操作封装
